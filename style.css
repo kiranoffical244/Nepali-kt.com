@@ -1,189 +1,33 @@
-body {
+/* style.css */
 
-    font-family: Arial, sans-serif;
-
-    background-color: #f4f4f4;
+.container {
 
     text-align: center;
 
-    margin: 0;
-
-    padding: 0;
+    padding: 20px;
 
 }
 
-.add-post-btn, .delete-all-btn {
+img {
 
-    position: fixed;
+    width: 150px;
 
-    bottom: 20px;
-
-    font-size: 24px;
-
-    border: none;
-
-    width: 50px;
-
-    height: 50px;
+    height: 150px;
 
     border-radius: 50%;
 
-    cursor: pointer;
-
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-
-}
-
-.add-post-btn {
-
-    right: 20px;
-
-    background: blue;
-
-    color: white;
-
-}
-
-.delete-all-btn {
-
-    left: 20px;
-
-    background: red;
-
-    color: white;
-
-}
-
-.form-container {
-
-    display: none;
-
-    background: white;
-
-    padding: 20px;
-
-    margin: 20px auto;
-
-    width: 90%;
-
-    max-width: 400px;
-
-    border-radius: 10px;
-
-    box-shadow: 0px 0px 10px #aaa;
-
-}
-
-input, select, button {
-
-    width: 100%;
-
-    padding: 10px;
-
-    margin: 5px 0;
-
-    border: 1px solid #ccc;
-
-    border-radius: 5px;
-
-}
-
-button {
-
-    background: blue;
-
-    color: white;
-
-    font-weight: bold;
-
-    cursor: pointer;
-
-}
-
-.image-preview-container {
-
-    width: 100%;
-
-    max-height: 300px;
-
-    overflow: hidden;
-
-}
-
-#image-preview {
-
-    width: 100%;
-
-}
-
-.post-container {
-
-    margin-top: 20px;
-
+.gallery {
     display: flex;
-
     flex-wrap: wrap;
-
+    gap: 10px;
     justify-content: center;
-
 }
 
-.post-card {
-
-    background: white;
-
-    padding: 15px;
-
-    margin: 10px;
-
-    width: 280px;
-
+.gallery img {
+    width: 100%; /* मोबाइल स्क्रिनको 100% */
+    max-width: 640px; /* फोटोको अधिकतम साइज (16:9 अनुसार) */
+    aspect-ratio: 16 / 9; /* फोटोको रेसियो 16:9 राख्ने */
+    object-fit: cover; /* यदि फोटो सानो छ भने पनि राम्रोसँग fill गर्ने */
     border-radius: 10px;
-
-    box-shadow: 0px 0px 10px #aaa;
-
-    text-align: left;
-
-}
-
-.post-card img {
-
-    width: 100%;
-
-    height: 180px;
-
-    border-radius: 10px;
-
-    object-fit: cover;
-
-}
-
-.post-card h3 a {
-
-    color: blue;
-
-    text-decoration: none;
-
-}
-
-.delete-btn {
-
-    background: none;
-
-    border: none;
-
-    color: red;
-
-    font-weight: bold;
-
-    cursor: pointer;
-
-    font-size: 18px;
-
-    display: block;
-
-    margin-top: 10px;
-
-    text-align: right;
-
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }

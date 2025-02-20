@@ -1,82 +1,28 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="ne">
 <head>
-  <meta charset="UTF-8">
-  <title>KT ID</title>
-  <link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<!DOCTYPE html>
-
-<html lang="en">
-
-<head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Facebook Profile Post</title>
-
+    <title>मेरो ग्यालरी</title>
     <link rel="stylesheet" href="style.css">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css">
-
 </head>
-
 <body>
+    <h1>मेरो फोटो ग्यालरी</h1>
 
-    <button class="add-post-btn" onclick="toggleForm()">+</button>
+    <!-- फोटोहरू राख्ने भाग -->
+    <div class="gallery">
+    <a href="https://www.example.com" target="_blank">
+        <img src="myphoto.jpg" alt="मेरो फोटो 1">
+    </a>
 
-    <button class="delete-all-btn" onclick="deleteAllPosts()">🗑️</button>
+    <a href="https://www.facebook.com" target="_blank">
+        <img src="photo2.jpg" alt="मेरो फोटो 2">
+    </a>
 
-    <div class="form-container" id="form-container">
-
-        <h2>Add New Profile</h2>
-
-        <input type="text" id="facebook-link" placeholder="Facebook Profile Link">
-
-        <input type="text" id="name" placeholder="Name">
-
-        <input type="number" id="age" placeholder="Age">
-
-        <input type="text" id="address" placeholder="Address">
-
-        <select id="category">
-
-            <option value="Shogee">Shogee</option>
-
-            <option value="Mall">Mall</option>
-
-        </select>
-
-        <input type="file" id="profile-pic" accept="image/*" onchange="previewImage(event)">
-
-        <div class="image-preview-container">
-
-            <img id="image-preview">
-
-        </div>
-
-        <button onclick="cropImage()">Crop</button>
-
-        <button onclick="addPost()">Submit</button>
-
-    </div>
-
-    <div class="post-container" id="post-container"></div>
-
-    <script src="script.js"></script>
-
-</body>
-
-</html>
-<!-- partial -->
-  <script  src="./script.js"></script>
+    <a href="https://www.google.com" target="_blank">
+        <img src="photo3.jpg" alt="मेरो फोटो 3">
+    </a>
+</div>
 
 </body>
 </html>
